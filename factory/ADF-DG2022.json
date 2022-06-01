@@ -1,0 +1,9 @@
+{
+	"name": "ADF-DG2022",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1ce4a66a-5fab-468f-80ef-564bf89dab23",
+		"tenantId": "c10d9100-7f58-4e3c-af7d-0cc0317096ea"
+	}
+}
