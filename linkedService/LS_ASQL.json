@@ -1,6 +1,5 @@
 {
 	"name": "LS_ASQL",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"annotations": [],
 		"type": "AzureSqlDatabase",
@@ -11,8 +10,9 @@
 					"referenceName": "LS_KV",
 					"type": "LinkedServiceReference"
 				},
-				"secretName": "ASQL-CONN"
+				"secretName": "ASQL-DB-CONNECTION"
 			}
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
 }
