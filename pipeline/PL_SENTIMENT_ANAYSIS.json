@@ -134,7 +134,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"url": {
-						"value": "@concat('https://azdemostor.blob.core.windows.net/feedback-staging/' ,pipeline().parameters.FileName,'_',variables('FileNameWithTimeStamp'),'.json')",
+						"value": "@concat('https://azdevstor.blob.core.windows.net/feedback-staging/' ,pipeline().parameters.FileName,'_',variables('FileNameWithTimeStamp'),'.json')",
 						"type": "Expression"
 					},
 					"method": "PUT",
