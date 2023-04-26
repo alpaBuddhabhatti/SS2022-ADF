@@ -233,6 +233,37 @@
 						"type": "Expression"
 					}
 				}
+			},
+			{
+				"name": "Sending an Email",
+				"type": "WebActivity",
+				"dependsOn": [
+					{
+						"activity": "Data Flow",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": {
+						"value": "https://prod-16.eastus.logic.azure.com:443/workflows/171e15027df64e98ae06454274e07596/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=38bgZZEJstHLzhg7cUXPh3HuiQi6i12BVRBOhuEd6tM",
+						"type": "Expression"
+					},
+					"method": "POST",
+					"body": {
+						"value": "{ \n    \"color\": \"Green\",\n    \"dataFactoryName\":\"AZDEV-ADF-DEMO\",\n    \"message\": \"\",\n    \"path\": \"\",\n    \"pipelineName\":\"\",\n    \"pipelineRunId\":\"\" ,\n    \"time\":@{pipeline().TriggerTime},\n    \"title\": \"\"\n}",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"parameters": {
