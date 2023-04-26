@@ -260,7 +260,7 @@
 					},
 					"method": "POST",
 					"body": {
-						"value": "{\n    \"color\": \"Green\",\n    \"dataFactoryName\": \"AZDEV-ADF-DEMO\",\n    \"message\": \"\",\n    \"path\": \"\",\n    \"pipelineName\": \"\",\n    \"pipelineRunId\": \"\",\n    \"time\": \"\",\n    \"title\": \"\"\n}",
+						"value": "{\n    \"color\": \"Green\",\n    \"dataFactoryName\": \"@{pipeline().DataFactory}\",\n    \"message\": \"\",\n    \"path\": \"\",\n    \"pipelineName\": \"@{pipeline().Pipeline}\",\n    \"pipelineRunId\": \"@{pipeline().RunId}\",\n    \"time\": \"@{pipeline().TriggerTime}\",\n    \"title\": \"Testing\"\n}",
 						"type": "Expression"
 					}
 				}
