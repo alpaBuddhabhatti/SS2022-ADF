@@ -20,6 +20,11 @@ Here is solution Diagrams:
 
     Customer Feedback.csv - file has sample data.
     .ppt file presentation.
+    
+  Please create three Azure Blob Storage container. 
+  1. feedback-in  (Please place "Customer Feedback.csv"  into this container)
+  2. feedback-staging
+  3. Feedback
 
 You can easily integrate Azure Congnitive Service for Langurage - Text Analytics with other Azure Services and other services Such as :
 
