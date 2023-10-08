@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "AzureFunction",
 		"typeProperties": {
-			"functionAppUrl": "https://createmanifest.azurewebsites.net",
+			"functionAppUrl": "https://funcapp-dev-demo.azurewebsites.net",
 			"functionKey": {
 				"type": "AzureKeyVaultSecret",
 				"store": {
