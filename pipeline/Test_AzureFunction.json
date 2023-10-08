@@ -19,7 +19,7 @@
 					"functionName": "CreateManifest",
 					"method": "POST",
 					"body": {
-						"value": "{\n\"name\":\"file-in\",\n\"values\": [\"events.csv|1\"]\n}",
+						"value": "{\n    \"name\": \"input\",\n    \"values\": [\n        \"4_BMW.jpg|0\"\n    ]\n}",
 						"type": "Expression"
 					}
 				},
